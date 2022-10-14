@@ -8,7 +8,7 @@ router.use(bodyParser.urlencoded({ extended: true }));
 const productRoute = require("./products/index");
 const categoryRoute = require("./categories/index");
 
-router.use("/product", productRoute);
+router.use("/products", productRoute);
 router.use("/category", categoryRoute);
 
 module.exports = router;

@@ -12,7 +12,7 @@ let logo__store = document.getElementById("logo__store");
  */
 function getProductByName() {
   let name = searchProduct.value;
-  fetch(`http://localhost:3001/products/${name}`)
+  fetch(`https://bsale-shop-test.herokuapp.com/products/${name}`)
     .then((response) => response.json())
     .then((data) => {
       section.innerHTML = "";
@@ -39,7 +39,7 @@ function getProductByName() {
  * each category, then it appends the option element to the select element
  */
 function getAllCategories() {
-  fetch("http://localhost:3001/category")
+  fetch("https://bsale-shop-test.herokuapp.com/category")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((category) => {
@@ -58,7 +58,7 @@ function getAllCategories() {
  */
 function selectByCategory() {
   let category = categories.value;
-  fetch(`http://localhost:3001/category/${category}`)
+  fetch(`https://bsale-shop-test.herokuapp.com/category/${category}`)
     .then((response) => response.json())
     .then((data) => {
       section.innerHTML = "";
@@ -85,7 +85,7 @@ function selectByCategory() {
  * each product, and then it appends all of them to the section
  */
 function getAllProducts() {
-  fetch("http://localhost:3001/products")
+  fetch("https://bsale-shop-test.herokuapp.com/products")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((product) => {

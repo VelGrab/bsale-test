@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/tienda.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Bsale Shop</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container__header">
+        <div class="logo">
+          <a href="#"><img id="logo__store" src="./assets/tienda.png" alt="Logo" /></a>
+        </div>
+        <form class="search">
+          <input id="search__input" type="text" placeholder="Buscar" />
+          <input id="search__button" type="submit" class="input__button" />
+        </form>
+        <div>
+            <img class="car__store" src="./assets/carrito-de-compras.png" alt="Carrito" />
+        </div>
+      </div>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+      <h4 class="category__text">Categorias</h4>
+      <div class="container__navBar">
+        <select id="category" class="category__select"></select>
+      </div>
+    </nav>
+    <!-- Main -->
+    <main>
+      <article>
+        <section class="container__section">
+          <div id="section__main"></div>
+        </section>
+      </article>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

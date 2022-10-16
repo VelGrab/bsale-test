@@ -43,8 +43,40 @@ const getProductsByNames = async (name) => {
       }
     });
     if (getProducts.length === 0) {
-      return console.log("No se encontraron productos con ese nombre");
+      return "No se encontraron productos con ese nombre";
     }
+    return getProducts;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const getProductsOrderAsc = async () => {
+  try {
+    const getProducts = await Product.findAll({
+      order: [["name", "ASC"]],
+    });
+    getProducts.forEach((product) => {
+      if (product.url_image === null || product.url_image === "") {
+        product.url_image = "https://cutt.ly/2BD9LY6";
+      }
+    });
+    return getProducts;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const getProductsOrderDesc = async () => {
+  try {
+    const getProducts = await Product.findAll({
+      order: [["name", "DESC"]],
+    });
+    getProducts.forEach((product) => {
+      if (product.url_image === null || product.url_image === "") {
+        product.url_image = "https://cutt.ly/2BD9LY6";
+      }
+    });
     return getProducts;
   } catch (error) {
     console.log(error);
@@ -54,4 +86,6 @@ const getProductsByNames = async (name) => {
 module.exports = {
   getAllProducts,
   getProductsByNames,
+  getProductsOrderAsc,
+  getProductsOrderDesc
 };

@@ -43,7 +43,7 @@ const getProductsByNames = async (name) => {
       }
     });
     if (getProducts.length === 0) {
-      return "No se encontraron productos con ese nombre";
+      return "";
     }
     return getProducts;
   } catch (error) {

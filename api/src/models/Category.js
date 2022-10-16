@@ -7,7 +7,7 @@ module.exports = (sequelize) => {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        allowNull: false
+        allowNull: false,
       },
       name: {
         type: DataTypes.STRING(255),
@@ -15,7 +15,7 @@ module.exports = (sequelize) => {
     },
     {
       timestamps: false,
-      tableName: 'category',
-    },
+      tableName: "category",
+    }
   );
 };

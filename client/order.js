@@ -2,7 +2,7 @@ let orderAsc = document.getElementById("asc");
 let orderDesc = document.getElementById("desc");
 
 function getProductByAsc() {
-  fetch("http://localhost:3001/order/asc")
+  fetch("https://bsale-shop-test.herokuapp.com/order/asc")
     .then((response) => response.json())
     .then((data) => {
       section.innerHTML = "";
@@ -25,7 +25,7 @@ function getProductByAsc() {
 }
 
 function getProductByDesc() {
-  fetch("http://localhost:3001/order/desc")
+  fetch("https://bsale-shop-test.herokuapp.com/order/desc")
     .then((response) => response.json())
     .then((data) => {
       section.innerHTML = "";

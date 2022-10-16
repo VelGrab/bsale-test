@@ -108,9 +108,10 @@ function getAllProducts() {
 /* Adding an event listener to the search button, and when the button is clicked, it checks if the
 input is empty, and if it is, it shows an alert, and if it is not, it calls the getProductByName
 function and clears the input. */
-search__button.addEventListener("click", function () {
+search__button.addEventListener("click", function (e) {
+  e.preventDefault();
   if (searchProduct.value === "") {
-    alert("Ingrese un producto");
+    return alert("Ingrese un producto");
   } else {
     getProductByName();
     searchProduct.value = "";
@@ -120,6 +121,7 @@ search__button.addEventListener("click", function () {
 /* Listening for the keypress event, and when the keycode is 13, it calls the getProductByName function
 and clears the input. */
 searchProduct.addEventListener("onKeyPress", function (e) {
+  e.preventDefault();
   if (e.keyCode === 13) {
     getProductByName();
     searchProduct.value = "";

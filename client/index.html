@@ -23,8 +23,8 @@
           <a href="#"><img id="logo__store" src="./assets/tienda.png" alt="Logo" /></a>
         </div>
         <form class="search">
-          <input id="search__input" type="text" placeholder="Buscar" />
-          <input id="search__button" type="submit" class="input__button" />
+          <input id="search__input" type="text" placeholder="Buscar producto..." />
+          <input id="search__button" value="Buscar" type="submit" class="input__button" />
         </form>
         <div>
             <img class="car__store" src="./assets/carrito-de-compras.png" alt="Carrito" />
@@ -37,6 +37,11 @@
       <div class="container__navBar">
         <select id="category" class="category__select"></select>
       </div>
+      <h4 class="order__text">Ordenar</h4>
+      <div class="container__order">
+        <button id="asc">A - Z</button>
+        <button id="desc">Z - A</button>
+      </div>
     </nav>
     <!-- Main -->
     <main>
@@ -47,5 +52,6 @@
       </article>
     </main>
     <script src="index.js"></script>
+    <script src="order.js"></script>
   </body>
 </html>

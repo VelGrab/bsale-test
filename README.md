@@ -73,6 +73,11 @@ Todo lo anterior mencionado haciendo consumo de nuestra API RESTful.
 
 Se agregaron estilos para dar una experiencia de usuario adecuada ademas de ser responsive.
 
+## 🔗 Documentacion Detallada
+Para visualizar el detalle de la documentacion de esta aplicacion puede ir al siguiente enlace.
+
+[Documentacion Detallada](https://www.notion.so/Bsale-Shop-Documentaci-n-46e17ef0d97d40a28103ad137c46c44e)
+
 # Conclusiones
 
 La experiencia durante el desarrollo de esta aplicacion estuvo llena de retos por resolver los cuales pienso que son la mejor manera de seguir superandose cada dia,
